@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 100 900;
+		font-display: swap;
+		ascent-override: 80%;
+		descent-override: 20%;
+		line-gap-override: 0%;
+		src: url(/fonts/Inter-VariableFont_slnt,wght.woff2) format('woff2');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+			U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
+
+	html,
+	body,
+	body > div {
+		height: 100%;
+	}
+
+}
+
+html, body {
+
+}
+
+.filler {
+	@apply max-w-full w-full min-w-0;
+	@apply max-h-full h-full min-h-0;
+	@apply flex-shrink flex-grow;
+}
+
+.stiff {
+	@apply flex-grow-0 flex-shrink-0;
+}
+
+.task-list-item-checkbox {
+	@apply bg-gray-300 dark:bg-gray-700;
+	@apply m-0;
+	@apply rounded-md;
+	@apply h-5 w-5;
+	@apply border-gray-500 border-opacity-50;
+	@apply text-sm;
+	@apply self-center;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	@apply mr-1;
+}
+
+.contains-task-list li {
+	list-style: none;
+}
+
+.contains-task-list {
+	padding-left:12px !important;
+}
+
+.trans-all {
+	@apply transition-all duration-200 ease-in-out;
+}
