@@ -30,7 +30,7 @@ export const POST: RequestHandler = async ({ request }): Promise<any> => {
 
     let markdown = "";
     const arrayBuffer = new Uint8Array(Buffer.concat(chunks)).buffer;
-    console.log({fileType});
+
     if(fileType === "application/pdf") {
        markdown = await pdf3md(arrayBuffer)
     } else if (fileType.search("application/vnd.openxmlformats-officedocument.wordprocessingml.document") > -1 || fileType.search("word") > -1) {

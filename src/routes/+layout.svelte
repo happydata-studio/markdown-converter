@@ -2,14 +2,13 @@
 	import '../app.postcss';
 	import Header from '$components/Header.svelte';
 	import Footer from '$components/Footer.svelte';
-	import { browser } from '$app/environment';
 </script>
 
 <div id="app" class="min-h-screen w-screen dark:bg-gray-950 dark:text-white">
 	<Header>
 		<div slot="header"><slot name="header" /></div>
 	</Header>
-	<main style="min-height:calc(100vh - 140px);">
+	<main style="min-height:calc(100vh - 140px);" class="z-0">
 		<slot />
 	</main>
 </div>

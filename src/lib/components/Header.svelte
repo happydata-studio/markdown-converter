@@ -11,7 +11,7 @@
 
 </script>
 
-<header class="z-20 bg-opacity-20 backdrop-blur-md backdrop-filter fixed top-0 mb-6 flex h-16 w-screen items-center justify-center">
+<header class="z-40 shadow-md bg-opacity-20 backdrop-blur-md backdrop-filter fixed top-0 mb-6 flex h-16 w-screen items-center justify-center">
 	<a href="/" class="trans-all flex items-center space-x-2 btn-2-white absolute left-6 font-mono text-black">
 		<img src="/icon.svg" class="w-7" alt="mdown.app icon" />
 		<span class="dark:text-white">Markdown Converter</span>
